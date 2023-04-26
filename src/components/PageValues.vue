@@ -1,8 +1,8 @@
 <script>
 export default {
     name: "PageValues",
-    data () {
-        
+    data() {
+
 
         return {}
     }
@@ -10,13 +10,50 @@ export default {
 </script>
 
 <template>
-    <div class="pageValues">
+    <div class="pageValues text-white">
         <div class="pageValuesBg"></div>
-        
+        <div class="pageValuesText d-flex flex-column align-items-center">
+            <h3>OUR VALUES</h3>
+            <div class="bar">
+            </div>
+            <p class="my-5">Think Big. Act Bigger</p>
+            <div class="container">
+                <div class="PageValuesContent d-flex mt-5">
+                    <div class="cleanWater d-flex flex-column align-items-center">
+                        <font-awesome-icon :icon="['fas', 'droplet']" class="fa-xl text-warning" />
+                        <span> Clean Water</span>
+                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quod,
+                            reprehenderit
+                            laudantium a aut non!</p>
+                        <button type="button" class="btn btn-warning text-white rounded-0 mt-3">Learn More</button>
+                    </div>
+                    <div class="Vaccination d-flex flex-column align-items-center">
+                        <font-awesome-icon :icon="['fas', 'stethoscope']" class="fa-xl text-warning" />
+                        <span> Vaccination</span>
+                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quod,
+                            reprehenderit
+                            laudantium a aut non!</p>
+                    </div>
+                    <div class="cleanWater d-flex flex-column align-items-center">
+                        <font-awesome-icon :icon="['fass', 'graduation-cap']" class="fa-xl text-warning" />
+                        <span> Education</span>
+                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quod,
+                            reprehenderit
+                            laudantium a aut non!</p>
+                    </div>
+                    <div class="cleanWater d-flex flex-column align-items-center">
+                        <font-awesome-icon :icon="['fas', 'wheat-alt']" class="fa-xl text-warning" />
+                        <span> Farming</span>
+                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quod,
+                            reprehenderit
+                            laudantium a aut non!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </template>
 
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
