@@ -15,7 +15,7 @@ export default {
                 "Mission",
                 "Causes",
                 "Journal",
-                // "Donate"
+                "Donate"
             ],
             transparentLogo: "../../public/img/avada-charity-logo.png"
         }
@@ -25,7 +25,7 @@ export default {
 
 <template>
     <header>
-        <HeaderNavbar />
+        <HeaderNavbar :logo-image="transparentLogo" :menu-list="menu" />
         <JumboTron />
     </header>
 </template>
