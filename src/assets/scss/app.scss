@@ -37,3 +37,15 @@ img {
     }
 }
 
+
+.pageValues {
+    height: 800px;
+    background-image: url(/public/img/home-content-bg-2.jpg); 
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    .pageValuesBg {
+        height: 20%;
+        background-image: url(/public/img/home-content-bg-2.jpg);
+        background-image: cover;
+    }
+}

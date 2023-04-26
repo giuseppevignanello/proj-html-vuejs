@@ -10,6 +10,10 @@ export default {
 </script>
 
 <template>
+    <div class="pageValues">
+        <div class="pageValuesBg"></div>
+        
+    </div>
 </template>
 
 
