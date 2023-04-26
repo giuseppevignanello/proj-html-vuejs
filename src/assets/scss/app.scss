@@ -8,13 +8,16 @@ img {
 }
 
 #appHeader {
-    height: 600px;
     background-image: url("/public/img/home-page-slider.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
     .logo {
         width: 250px;
+    }
+
+    .jumbotron {
+        height: 700px
     }
 }
 
