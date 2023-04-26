@@ -16,12 +16,12 @@ export default {
 
 <template>
     <div class="container">
-        <div class="row row-cols-2 justify-content-between align-items-center my-3">
+        <div class="row row-cols-2 justify-content-between align-items-center py-3">
             <div class="logo">
                 <img :src="logoImage" alt="">
             </div>
 
-            <ul class="d-flex list-unstyled justify-content-between">
+            <ul class="d-flex list-unstyled justify-content-between text-white">
                 <li v-for="item in menuList">
                     {{ item }}
                 </li>

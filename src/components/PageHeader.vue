@@ -24,7 +24,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header id="appHeader">
         <HeaderNavbar :logo-image="transparentLogo" :menu-list="menu" />
         <JumboTron />
     </header>
