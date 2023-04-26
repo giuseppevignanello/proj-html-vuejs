@@ -1,5 +1,5 @@
 @use "/node_modules/bootstrap/scss/bootstrap.scss";
-@use "./partials/variables.scss";
+@use "./partials/variables.scss" as *;
 
 
 img {
@@ -18,6 +18,22 @@ img {
 
     .jumbotron {
         height: 700px
+    }
+}
+
+.pageBanner {
+
+    .left_side {
+        padding: 7rem
+        
+    }
+    .bar {
+        border-top: 3px solid $secondary;
+        width: 20%;
+    }
+
+    .right_side {
+        background-image: url(/public/img/home-content-bg-1.jpg);
     }
 }
 
