@@ -3,9 +3,28 @@ export default {
     name: "PageValues",
     data() {
 
-
-        return {}
-    }
+        return {
+            values: [
+                {
+                    icon: ['fas', 'droplet'],
+                    title: "Clean Water"
+                }, 
+                {
+                    icon:  ['fas', 'stethoscope'],
+                    title: "Vaccination", 
+                },
+                {
+                    icon:  ['fas', 'graduation-cap'],
+                    title: "Education"
+                },
+                {
+                    icon:   ['fas', 'wheat-alt'],
+                    title: "Farming" 
+                },
+        
+            ]
+}
+}
 }
 </script>
 
@@ -19,34 +38,14 @@ export default {
             <p class="my-5">Think Big. Act Bigger</p>
             <div class="container">
                 <div class="PageValuesContent d-flex mt-5">
-                    <div class="cleanWater d-flex flex-column align-items-center">
-                        <font-awesome-icon :icon="['fas', 'droplet']" class="fa-xl text-warning" />
-                        <span> Clean Water</span>
-                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quod,
-                            reprehenderit
-                            laudantium a aut non!</p>
-                        <button type="button" class="btn btn-warning text-white rounded-0 mt-3">Learn More</button>
-                    </div>
-                    <div class="Vaccination d-flex flex-column align-items-center">
-                        <font-awesome-icon :icon="['fas', 'stethoscope']" class="fa-xl text-warning" />
-                        <span> Vaccination</span>
-                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quod,
-                            reprehenderit
-                            laudantium a aut non!</p>
-                    </div>
-                    <div class="cleanWater d-flex flex-column align-items-center">
-                        <font-awesome-icon :icon="['fass', 'graduation-cap']" class="fa-xl text-warning" />
-                        <span> Education</span>
-                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quod,
-                            reprehenderit
-                            laudantium a aut non!</p>
-                    </div>
-                    <div class="cleanWater d-flex flex-column align-items-center">
-                        <font-awesome-icon :icon="['fas', 'wheat-alt']" class="fa-xl text-warning" />
-                        <span> Farming</span>
-                        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quod,
-                            reprehenderit
-                            laudantium a aut non!</p>
+                    <div v-for="value in this.values" class="d-flex flex-column align-items-center">
+                            <font-awesome-icon :icon="value.icon" class="fa-xl text-warning" />
+                            <span> {{value.title}}</span>
+                            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
+                                quod,
+                                reprehenderit
+                                laudantium a aut non!</p>
+                            <button type="button" class="btn btn-warning text-white rounded-0 mt-3">Learn More</button>
                     </div>
                 </div>
             </div>
