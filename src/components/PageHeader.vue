@@ -1,21 +1,34 @@
 
 <script>
+import HeaderNavbar from "./HeaderNavbar.vue"
+import JumboTron from "./JumboTron.vue"
 export default {
     name: "PageHeader",
-    data () {
-        
-
-        return {}
+    components: {
+        HeaderNavbar,
+        JumboTron,
+    },
+    data() {
+        return {
+            menu: [
+                "Home",
+                "Mission",
+                "Causes",
+                "Journal",
+                // "Donate"
+            ],
+            transparentLogo: "../../public/img/avada-charity-logo.png"
+        }
     }
 }
 </script>
 
 <template>
-    <div>
-    </div>
+    <header>
+        <HeaderNavbar />
+        <JumboTron />
+    </header>
 </template>
 
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
