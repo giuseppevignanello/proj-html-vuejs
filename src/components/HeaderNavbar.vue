@@ -21,7 +21,7 @@ export default {
                 <img :src="logoImage" alt="">
             </div>
             <!-- fix first and last child color  -->
-            <ul class="d-flex list-unstyled justify-content-between text-white">
+            <ul class="menu d-flex list-unstyled justify-content-between text-white align-items-center">
                 <li v-for="item in menuList">
                     {{ item }}
                 </li>

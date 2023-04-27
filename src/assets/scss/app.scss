@@ -37,6 +37,17 @@ a {
     }
 }
 
+.menu{
+    li:first-of-type {
+        color: $secondary;
+    }
+
+    li:last-of-type {
+        padding: 0.5rem 1rem;
+        background-color: $secondary;
+    }
+}
+
 .pageBanner {
 
     .left_side {
