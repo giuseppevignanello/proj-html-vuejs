@@ -40,7 +40,7 @@ export default {
             <div class="container">
                 <div class="PageValuesContent d-md-flex mt-md-5 justify-content-center">
                     <div v-for="value in this.values" class="d-flex flex-column align-items-center mt-3">
-                            <font-awesome-icon :icon="value.icon" class="fa-xl text-warning" />
+                            <font-awesome-icon :icon="value.icon" class="valueIcon" />
                             <h4 class="valueTitle"> {{value.title}}</h4>
                             <p class="text-center d-none d-md-block">{{ this.valueText }}</p>
                             <button type="button" class="valueBtn btn btn-warning text-white rounded-0 mt-3">Learn More</button>

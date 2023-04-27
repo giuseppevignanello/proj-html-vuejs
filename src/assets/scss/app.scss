@@ -67,7 +67,7 @@ a {
 
 
 .pageValues {
-    height: 900px;
+    height: 950px;
     background-image: url(/public/img/home-content-bg-2.jpg);
     background-size: 1600px;
     background-repeat: no-repeat;
@@ -79,10 +79,26 @@ a {
         background-image: cover;
     }
 
+    .valueIcon{
+        color: $secondary;
+        font-size: 35px
+    }
+
+    .valueIcon:hover {
+        color: $lighter
+    }
+
 }
 
 .viewAll {
     background-color: $main;
+}
+
+.article {
+
+    img:hover {
+    transform: scale(1.1);
+}
 }
 
 .callToAction {
