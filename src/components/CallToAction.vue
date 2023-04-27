@@ -1,26 +1,32 @@
 <script>
 export default {
     name: "CallToAction",
+    props: {
+        titleCTA: String,
+        textCTA: String,
+        firstBtnCTA: String,
+        secondBtnCTA: String
+    },
     data() {
 
 
-        return {}
+        return {
+        }
     }
 }
 </script>
 
 <template>
     <!-- move call to action to footer -->
-    <div class="callToAction text-white mt-5 py-5">
+    <div class="callToAction text-white mt-5 py_10">
         <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
-            <h5 class="text-center mt-5">CHANGE A LIFE TODAY</h5>
+            <h5 class="text-center mt-5">{{ titleCTA }}</h5>
             <div class="bar mb-4">
             </div>
-            <p class="text-center">As long as poverty & inequality persist, none of us can truly rest. It doesn't take much to
-                change a life. Get in touch today and start making the difference</p>
+            <p class="text-center w-50">{{textCTA}}</p>
             <div class="buttons">
-                <button type="button" class="btn btn-outline-light rounded-0 me-4">VOLUNTEER</button>
-                <button type="button" class="btn btn-outline-light rounded-0">DONATE NOW</button>
+                <button type="button" class="btn btn-outline-light rounded-0 me-4">{{firstBtnCTA}}</button>
+                <button type="button" class="btn btn-outline-light rounded-0">{{secondBtnCTA}}</button>
             </div>
         </div>
 
