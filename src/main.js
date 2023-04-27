@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import './assets/scss/app.scss'
+import 'bootstrap/dist/js/bootstrap.js'
 import App from './App.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
