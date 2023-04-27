@@ -21,7 +21,7 @@ export default {
 
 <template>
     <div class="container">
-        <div class="recentCauses d-flex flex-column align-items-center">
+        <div id="Causes" class="recentCauses d-flex flex-column align-items-center">
             <h3 class="mt-5">Recent Causes</h3>
             <div class="bar mb-3">
             </div>

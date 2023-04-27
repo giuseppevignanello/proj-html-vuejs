@@ -42,7 +42,7 @@ export default {
 <template>
     <!-- all titles are the same -->
     <div class="container">
-        <div class="latestArticles d-flex flex-column align-items-center">
+        <div id="Journal" class="latestArticles d-flex flex-column align-items-center">
             <h3 class="mt-5">Latest Articles</h3>
             <div class="bar mb-3">
             </div>

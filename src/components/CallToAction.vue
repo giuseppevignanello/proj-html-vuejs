@@ -18,7 +18,7 @@ export default {
 
 <template>
     <!-- move call to action to footer -->
-    <div class="callToAction text-white mt-5 py_10">
+    <div id="Donate" class="callToAction text-white mt-5 py_10">
         <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
             <h5 class="text-center mt-5">{{ titleCTA }}</h5>
             <div class="bar mb-4">

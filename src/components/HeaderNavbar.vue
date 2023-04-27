@@ -29,7 +29,7 @@ export default {
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav menu d-flex list-unstyled justify-content-between text-white align-items-center">
                         <li class="nav-item mx-2" v-for="item in menuList">
-                            <a href="">{{ item }}</a> 
+                            <a :href="'#' + item">{{ item }}</a> 
                         </li>
                     </ul>
                 </div>

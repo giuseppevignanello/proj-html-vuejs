@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-    <div class="pageValues text-white">
+    <div id="Mission" class="pageValues text-white">
         <div class="pageValuesBg"></div>
         <div class="pageValuesText d-flex flex-column align-items-center">
             <h3>OUR VALUES</h3>
