@@ -19,6 +19,7 @@ img {
 
 a {
     text-decoration: none;
+    color: $lighter;
 }
 
 
@@ -40,18 +41,19 @@ a {
 }
 
 .menu{
-    li:first-of-type {
-        color: $secondary;
-    }
-
+    
     li:last-of-type {
         padding: 0.5rem 1rem;
         background-color: $secondary;
+        margin-top: 5px;
     }
 }
 
 .pageBanner {
 
+    .toView {
+        height: 200px;
+    }
     .left_side {
         padding: 5rem
     }

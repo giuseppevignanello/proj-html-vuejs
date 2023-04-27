@@ -27,9 +27,9 @@ export default {
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav menu d-flex list-unstyled justify-content-between text-white align-items-end">
+                    <ul class="navbar-nav menu d-flex list-unstyled justify-content-between text-white align-items-center">
                         <li class="nav-item mx-2" v-for="item in menuList">
-                            {{ item }}
+                            <a href="">{{ item }}</a> 
                         </li>
                     </ul>
                 </div>
