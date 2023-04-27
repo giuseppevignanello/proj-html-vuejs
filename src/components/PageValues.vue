@@ -22,7 +22,8 @@ export default {
                     title: "Farming" 
                 },
         
-            ]
+            ], 
+            valueText: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosamquod,reprehenderit laudantium a aut non!"
 }
 }
 }
@@ -37,20 +38,18 @@ export default {
             </div>
             <p class="my-5">Think Big. Act Bigger</p>
             <div class="container">
-                <div class="PageValuesContent d-flex mt-5">
-                    <div v-for="value in this.values" class="d-flex flex-column align-items-center">
+                <div class="PageValuesContent d-md-flex mt-md-5 justify-content-center">
+                    <div v-for="value in this.values" class="d-flex flex-column align-items-center mt-3">
                             <font-awesome-icon :icon="value.icon" class="fa-xl text-warning" />
-                            <span> {{value.title}}</span>
-                            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
-                                quod,
-                                reprehenderit
-                                laudantium a aut non!</p>
-                            <button type="button" class="btn btn-warning text-white rounded-0 mt-3">Learn More</button>
+                            <h4 class="valueTitle"> {{value.title}}</h4>
+                            <p class="text-center d-none d-md-block">{{ this.valueText }}</p>
+                            <button type="button" class="valueBtn btn btn-warning text-white rounded-0 mt-3">Learn More</button>
                     </div>
                 </div>
             </div>
         </div>
 
+       
     </div>
 </template>
 

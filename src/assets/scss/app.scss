@@ -23,6 +23,7 @@ a {
 
 
 
+
 #appHeader {
     background-image: url("/public/img/home-page-slider.jpg");
     background-repeat: no-repeat;
@@ -63,16 +64,18 @@ a {
 
 
 .pageValues {
-    height: 800px;
+    height: 900px;
     background-image: url(/public/img/home-content-bg-2.jpg);
     background-size: 1600px;
     background-repeat: no-repeat;
+    background-position: center;
 
     .pageValuesBg {
         height: 20%;
         background-image: url(/public/img/home-content-bg-2.jpg);
         background-image: cover;
     }
+
 }
 
 .viewAll {
@@ -114,3 +117,4 @@ a {
         background-color: $dark; 
     }
 }
+
