@@ -6,6 +6,7 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
+
 .bar {
     border-top: 3px solid $secondary;
     width: 20%;
@@ -14,6 +15,10 @@ img {
 .py_10 {
     padding-top: 10rem;
     padding-bottom: 10rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -36,9 +41,8 @@ img {
 
     .left_side {
         padding: 7rem
-        
     }
-   
+
 
     .right_side {
         background-image: url(/public/img/home-content-bg-1.jpg);
@@ -48,9 +52,10 @@ img {
 
 .pageValues {
     height: 800px;
-    background-image: url(/public/img/home-content-bg-2.jpg); 
+    background-image: url(/public/img/home-content-bg-2.jpg);
     background-size: 1600px;
     background-repeat: no-repeat;
+
     .pageValuesBg {
         height: 20%;
         background-image: url(/public/img/home-content-bg-2.jpg);
@@ -62,7 +67,7 @@ img {
     background-color: $main;
 }
 
-.callToAction  {
+.callToAction {
     background-image: url("../../../public/img/home-footer.jpg");
     background-size: cover;
     background-position: center;
@@ -76,3 +81,24 @@ img {
     }
 }
 
+.bottomFooter {
+    background-color: $light;
+    color: $jumbo;
+    position: relative;
+
+    .icon {
+        width: 25px;
+        aspect-ratio: 1;
+    }
+
+}
+
+.angleUp {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    a {
+        color: $lighter;
+        background-color: $dark; 
+    }
+}

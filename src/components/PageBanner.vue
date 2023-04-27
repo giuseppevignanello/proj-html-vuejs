@@ -47,5 +47,4 @@ export default {
 <style lang="scss" scoped></style>
 
 
-                <font-awesome-icon  />
-                <font-awesome-icon  />
+         
