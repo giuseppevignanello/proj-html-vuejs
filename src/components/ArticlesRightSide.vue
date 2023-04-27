@@ -15,7 +15,7 @@ export default {
 
 <template>
     <div class="right_side d-flex flex-column">
-        <div class="article d-flex row mb-3" v-for="article in this.latestArticles
+        <div class="article d-flex row mb-3" v-for="article in this.latestArticles.slice(0,4)
                     ">
             <img class="col-8 col-sm-6 col-lg-4" :src="article.image_path" alt="">
             <div class="text col-8">

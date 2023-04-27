@@ -40,8 +40,8 @@ a {
     }
 }
 
-.menu{
-    
+.menu {
+
     li:last-of-type {
         padding: 0.5rem 1rem;
         background-color: $secondary;
@@ -54,6 +54,7 @@ a {
     .toView {
         height: 200px;
     }
+
     .left_side {
         padding: 5rem
     }
@@ -101,7 +102,6 @@ a {
 .bottomFooter {
     background-color: $light;
     color: $jumbo;
-    position: relative;
 
     .icon {
         width: 25px;
@@ -111,12 +111,15 @@ a {
 }
 
 .angleUp {
-    position: absolute;
-    bottom: 0;
-    right: 2%;
+    width: 40px;
+    aspect-ratio: 1;
+    position: fixed;
+    bottom: 3%;
+    right: 5%;
+    background-color: $dark;
+
     a {
-        color: $lighter;
-        background-color: $dark; 
+        color: $secondary
+       
     }
 }
-

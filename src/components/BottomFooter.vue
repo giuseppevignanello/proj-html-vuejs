@@ -28,8 +28,8 @@ export default {
                 <font-awesome-icon v-for="icon in socialIcon" :icon="icon" class="icon fa-xl me-3 text-warning rounded-circle bg-light p-2" />
             </div>
         </div>
-        <div class="angleUp rounded-top">
-            <a href="#" class="px-2"> <font-awesome-icon :icon="['fas', 'angle-up']" /></a>
+        <div class="angleUp rounded-circle d-flex align-items-center">
+            <a href="#" class="px-2 "> <font-awesome-icon  class="w-100 h-100" :icon="['fas', 'angle-up']" /></a>
         </div>
     </div>
 </template>
