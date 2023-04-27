@@ -3,7 +3,6 @@ export default {
     name: "PageBanner",
     data() {
 
-
         return {}
     }
 }
@@ -43,8 +42,6 @@ export default {
     </div>
 </template>
 
-
-<style lang="scss" scoped></style>
 
 
          

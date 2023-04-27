@@ -1,6 +1,12 @@
 <script>
+import ArticlesRightSide from "./ArticlesRightSide.vue"
+import ArticlesLeftSide from "./ArticlesLeftSide.vue"
 export default {
     name: "LatestArticles",
+    components: {
+        ArticlesRightSide, 
+        ArticlesLeftSide
+    },
     data() {
 
 
@@ -42,36 +48,13 @@ export default {
             </div>
             <span class="mb-5">Together me make all the difference</span>
             <div class="content row row-cols-2">
-                <div class="left-side ">
-                    <div class="card h-100">
-                        <img src="../../public/img/photo-1444213007800-cff19e1677ac-400x300.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning my-3">Understanding community complexities</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sunt libero
-                                ullam ipsam commodi officia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="right_side d-flex flex-column">
-                    <div class="article d-flex row mb-3" v-for="article in this.latestArticles
-                    ">
-                        <img class="col-4" :src="article.image_path" alt="">
-                        <div class="text col-8">
-                            <span class="text-warning">{{ article.title }}</span>
-                            <p>{{ article.subtitle }}</p>
-                        </div>
-                    </div>
-                </div>
+                <ArticlesLeftSide/>
+                <ArticlesRightSide :latest-articles="latestArticles"/>
             </div>
         </div>
-
-        <!-- insert link -->
-        <div class="viewAll text-white text-center py-2 mt-5">
-           View All Our Articles
+        <div class="viewAll text-center py-2 mt-5">
+          <a href="#" class="text-white"> View All Our Articles </a>
         </div>
     </div>
 </template>
 
-
-<style lang="scss" scoped></style>
