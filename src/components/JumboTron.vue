@@ -23,16 +23,11 @@ export default {
             <p class="text-center"> {{text}}</p>
             <div class="buttons row justify-content-center px-2">
                 <button type="button" class="col-12 col-md-4 btn btn-outline-light mx-2 rounded-0">{{first_btn}}</button>
-                <button type="button" class="col-12 col-md-4 btn btn-outline-warning mx-2 rounded-0" data-bs-toggle="offcanvas"
-                    data-bs-target="#donate" aria-controls="donate">{{second_btn}}</button>
+                <button type="button" class="col-12 col-md-4 btn btn-outline-warning mx-2 rounded-0">
+                  <a class="text-white" href="#Donate">{{second_btn}}</a>  
+                </button>
             </div>
         </div>
-
-
-
-         <!-- Offcanvas -->
-        
-        <OffcanvasDonate/>
 
     </div>
 </template>
