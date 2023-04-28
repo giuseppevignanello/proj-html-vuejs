@@ -24,7 +24,7 @@ export default {
             </div>
             <div class="card-body">
                 <h5 class="card-title text-warning my-3">{{this.title}}</h5>
-                <p class="card-text ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sunt libero
+                <p class="card-text d-none d-sm-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sunt libero
                     ullam ipsam commodi officia.</p>
             </div>
         </div>

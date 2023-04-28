@@ -38,7 +38,7 @@ export default {
         <div id="Causes" class="recentCauses d-flex flex-column align-items-center">
             <SectionTitle :title="title"/>
             <span class="mb-5 text-center">We run projects in over 30 countries in 5 continents</span>
-            <div class="photos row mb-5 justify-content-center">
+            <div class="photos row mb-5 justify-content-center text-center">
                 <div class="image col-12 col-sm-6 col-md-3  mb-2 " v-for="photo in this.photos">
                     <img :src="photo.photos_path" alt="">
                     <div class="front text-white justify-content-center align-items-center"> 
