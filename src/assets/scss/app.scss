@@ -110,6 +110,9 @@ a {
     .image {
         position: relative
     }
+    img {
+        transition: transform 1s;
+    }
 
     .front {
         height: 100%;
@@ -119,10 +122,16 @@ a {
         top: 0;
         left: 11px;
         display: none;
+        transition: transform, 1s,;
     }
 
-    img:hover + .front {
+    .image:hover .front {
         display: flex;
+        transform: scale(1.1);
+    }
+
+    .image:hover img {
+        transform: scale(1.1);
     }
 }
 // #endregion causes
@@ -132,6 +141,9 @@ a {
 
 .article {
 
+    img {
+        transition: transform 1s;
+    }
     img:hover {
     transform: scale(1.1);
 }
