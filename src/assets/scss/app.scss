@@ -2,6 +2,8 @@
 @use "./partials/variables.scss" as *;
 
 
+// #region general 
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -22,9 +24,9 @@ a {
     color: $lighter;
 }
 
+// #endregion general 
 
-
-
+// #region header
 #appHeader {
     background-image: url("/public/img/home-page-slider.jpg");
     background-repeat: no-repeat;
@@ -49,6 +51,11 @@ a {
     }
 }
 
+
+// #endregion header
+
+
+// #region banner
 .pageBanner {
 
     .toView {
@@ -90,9 +97,10 @@ a {
 
 }
 
-.viewAll {
-    background-color: $main;
-}
+// #endregion banner
+
+// #region articles
+
 
 .article {
 
@@ -101,12 +109,24 @@ a {
 }
 }
 
+.viewAll {
+    background-color: $main;
+}
+
+// #endregion articles
+
+// #region CTA
+
 .callToAction {
     background-image: url("../../../public/img/home-footer.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+// #endregion CTA
+
+// #region footer
 
 .bannerLogo {
     .image {
@@ -139,3 +159,5 @@ a {
        
     }
 }
+
+// #endregion footer
