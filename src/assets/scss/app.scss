@@ -78,7 +78,7 @@ a {
 
 
 .pageValues {
-    height: 950px;
+    height: 700px;
     background-image: url(/public/img/home-content-bg-2.jpg);
     background-size: 1600px;
     background-repeat: no-repeat;
@@ -201,3 +201,11 @@ a {
 }
 
 // #endregion footer
+
+
+@media screen and (max-width: 768px) {
+    .pageValues {
+        height: 950px
+    
+}
+}

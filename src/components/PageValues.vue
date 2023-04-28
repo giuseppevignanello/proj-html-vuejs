@@ -41,8 +41,8 @@ export default {
             <SectionTitle :title="title"/>
             <p class="my-5">Think Big. Act Bigger</p>
             <div class="container">
-                <div class="PageValuesContent d-md-flex mt-md-5 justify-content-center">
-                    <div v-for="value in this.values" class="d-flex flex-column align-items-center mt-3">
+                <div class="PageValuesContent row flex-column flex-md-row justify-content-center">
+                    <div v-for="value in this.values" class="col-md-3 d-flex flex-column align-items-center mt-3">
                             <font-awesome-icon :icon="value.icon" class="valueIcon" />
                             <h4 class="valueTitle"> {{value.title}}</h4>
                             <p class="text-center d-none d-md-block">{{ this.valueText }}</p>
