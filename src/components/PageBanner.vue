@@ -92,9 +92,9 @@ export default {
         </div>
         <div class="right_side w-25 d-flex flex-column text-white justify-content-center p-3">
             <div v-for="goal in this.goals" class="text-center mb-4">
-                <h3 v-if="goal.million == ''" ><font-awesome-icon :icon="goal.icon" class="fa-xl me-2" /> <br> {{ goal.number}} {{
-                    goal.million }}</h3>
-                <h3 v-else> <font-awesome-icon :icon="goal.icon" class="fa-xl me-2" /> <br> {{ goal.number.toFixed(1) }} {{
+                <h2 v-if="goal.million == ''" ><font-awesome-icon :icon="goal.icon" class="goalIcon me-2" /> <br> {{ goal.number}} {{
+                    goal.million }}</h2>
+                <h3 v-else> <font-awesome-icon :icon="goal.icon" class="goalIcon me-2" /> <br> {{ goal.number.toFixed(1) }} {{
                     goal.million }} </h3>
                 <p class="d-none d-sm-block">{{ goal.title }}</p>
             </div>
