@@ -27,10 +27,10 @@ export default {
     </div>
     <div v-show="this.viewMoreClicked" class="moreArticles">
         <div class="d-flex justify-content-center mt-3">
-            <div class="article d-flex row mb-3" v-for="article in this.latestArticles.slice(5,this.latestArticles.length)">
-                <img class="col-8 col-sm-6 col-lg-4" :src="article.image_path" alt="">
+            <div class="article d-flex row mb-3 justify-content-center" v-for="article in this.latestArticles.slice(5,this.latestArticles.length)">
+                <img class="col-8 col-sm-8 col-lg-6 col-xl-4" :src="article.image_path" alt="">
                 <div class="text col-8">
-                    <span class="text-warning d-none d-sm-block">{{ article.title }}</span>
+                    <span class="text-warning d-none d-md-block">{{ article.title }}</span>
                     <p class="d-none d-lg-block">{{ article.subtitle }}</p>
                 </div>
             </div>

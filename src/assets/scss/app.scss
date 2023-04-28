@@ -24,6 +24,10 @@ a {
     color: $lighter;
 }
 
+a:visited {
+    color: $lighter
+}
+
 // #endregion general 
 
 // #region header
@@ -90,13 +94,14 @@ a {
         background-image: cover;
     }
 
-    .valueIcon{
+    .valueIcon {
         color: $secondary;
         font-size: 35px
     }
 
     .valueIcon:hover {
-        color: $lighter
+        color: $lighter;
+        cursor: pointer;
     }
 
 }
@@ -110,6 +115,7 @@ a {
     .image {
         position: relative
     }
+
     img {
         transition: transform 1s;
     }
@@ -122,31 +128,69 @@ a {
         top: 0;
         left: 11px;
         display: none;
-        transition: transform, 1s,;
+        transition: transform 1s, ;
     }
 
     .image:hover .front {
         display: flex;
         transform: scale(1.1);
+        cursor: pointer;
     }
 
     .image:hover img {
         transform: scale(1.1);
+        cursor: pointer;
     }
 }
+
 // #endregion causes
 
 // #region articles
 
+.left_side {
+
+     .image {
+        position: relative
+    }
+
+    img {
+        transition: transform 1s;
+    }
+
+
+    .front{
+        height: 100%;
+        width: 100%;
+        background-color: #fcd66c94;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        display: none;
+        transition: transform 1s ;
+    }
+
+    .image:hover .front{
+        display: flex;
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    .image:hover img {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+}
 
 .article {
 
     img {
         transition: transform 1s;
     }
+
     img:hover {
-    transform: scale(1.1);
-}
+        transform: scale(1.1);
+        cursor: pointer;
+    }
 }
 
 .viewAll {
@@ -196,7 +240,6 @@ a {
 
     a {
         color: $secondary
-       
     }
 }
 
@@ -206,6 +249,5 @@ a {
 @media screen and (max-width: 768px) {
     .pageValues {
         height: 950px
-    
-}
+    }
 }
