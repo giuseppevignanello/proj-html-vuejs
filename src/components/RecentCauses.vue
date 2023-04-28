@@ -10,14 +10,23 @@ export default {
 
         return {
             title: "Recent Causes",
-            photos_path: [
-                "../../public/img/avada-charity-fair-trade-featured-400x300.jpg",
-                "../../public/img/avada-charity-shelter-featured-400x300.jpg",
-                "../../public/img/avada-charity-farming-featured-400x300.jpg",
-                "../../public/img/avada-charity-vaccines-featured-400x300.jpg"
-
-
-
+            photos: [
+                {
+                    photos_path: "../../public/img/avada-charity-fair-trade-featured-400x300.jpg",
+                    text: "FAIR TRADE"
+                },
+                {
+                    photos_path:"../../public/img/avada-charity-shelter-featured-400x300.jpg",
+                    text: "SHELTER"
+                },
+                {
+                    photos_path:"../../public/img/avada-charity-farming-featured-400x300.jpg",
+                    text: "FARMING"
+                },
+                {
+                    photos_path:"../../public/img/avada-charity-vaccines-featured-400x300.jpg",
+                    text: "VACCINES"
+                }
             ]
         }
     }
@@ -30,9 +39,12 @@ export default {
             <SectionTitle :title="title"/>
             <span class="mb-5">We run projects in over 30 countries in 5 continents</span>
             <div class="photos d-flex mb-5">
-                <div class="image me-3" v-for="photo in this.photos_path">
-                    <img :src="photo" alt="">
+                <div class="image me-3" v-for="photo in this.photos">
+                    <img :src="photo.photos_path" alt="">
+                    <div class="front text-white justify-content-center align-items-center"> 
+                        <h4>{{ photo.text }}</h4></div>
                 </div>
+                
             </div>
         </div>
     </div>

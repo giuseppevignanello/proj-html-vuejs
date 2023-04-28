@@ -99,6 +99,30 @@ a {
 
 // #endregion banner
 
+
+// #region causes
+
+.recentCauses {
+    .image {
+        position: relative
+    }
+
+    .front {
+        height: 100%;
+        width: 100%;
+        background-color: #fcd66c94;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    img:hover + .front {
+        display: flex;
+    }
+}
+// #endregion causes
+
 // #region articles
 
 
