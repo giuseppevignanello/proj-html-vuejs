@@ -2,16 +2,19 @@
 import ArticlesRightSide from "./ArticlesRightSide.vue"
 import ArticlesLeftSide from "./ArticlesLeftSide.vue"
 import ViewMoreArticles from "./ViewMoreArticles.vue"
+import SectionTitle from "./SectionTitle.vue"
 export default {
     name: "LatestArticles",
     components: {
         ArticlesRightSide,
         ArticlesLeftSide,
-        ViewMoreArticles
+        ViewMoreArticles, 
+        SectionTitle
     },
     data() {
 
         return {
+            title: "Latest Articles",
             latestArticles: [
                 {
                     image_path: "../../public/img/photo-1444664597500-035db93e2323-177x142.jpg",
@@ -65,9 +68,7 @@ export default {
     <!-- all titles are the same -->
     <div class="container">
         <div id="Journal" class="latestArticles d-flex flex-column align-items-center">
-            <h3 class="mt-5">Latest Articles</h3>
-            <div class="bar mb-3">
-            </div>
+            <SectionTitle :title="title"/>
             <span class="mb-5">Together me make all the difference</span>
             <div class="content row row-cols-2">
                 <ArticlesLeftSide />

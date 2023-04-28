@@ -1,9 +1,14 @@
 <script>
+import SectionTitle from './SectionTitle.vue';
 export default {
     name: "PageValues",
+    components: {
+        SectionTitle
+    },
     data() {
 
         return {
+            title: "Our Values",
             values: [
                 {
                     icon: ['fas', 'droplet'],
@@ -33,9 +38,7 @@ export default {
     <div id="Mission" class="pageValues text-white">
         <div class="pageValuesBg"></div>
         <div class="pageValuesText d-flex flex-column align-items-center">
-            <h3>OUR VALUES</h3>
-            <div class="bar">
-            </div>
+            <SectionTitle :title="title"/>
             <p class="my-5">Think Big. Act Bigger</p>
             <div class="container">
                 <div class="PageValuesContent d-md-flex mt-md-5 justify-content-center">

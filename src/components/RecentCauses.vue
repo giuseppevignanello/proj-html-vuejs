@@ -1,10 +1,15 @@
 <script>
+import SectionTitle from "./SectionTitle.vue"
 export default {
     name: "RecentCauses",
+    components: {
+        SectionTitle
+    },
     data() {
 
 
         return {
+            title: "Recent Causes",
             photos_path: [
                 "../../public/img/avada-charity-fair-trade-featured-400x300.jpg",
                 "../../public/img/avada-charity-shelter-featured-400x300.jpg",
@@ -22,9 +27,7 @@ export default {
 <template>
     <div class="container">
         <div id="Causes" class="recentCauses d-flex flex-column align-items-center">
-            <h3 class="mt-5">Recent Causes</h3>
-            <div class="bar mb-3">
-            </div>
+            <SectionTitle :title="title"/>
             <span class="mb-5">We run projects in over 30 countries in 5 continents</span>
             <div class="photos d-flex mb-5">
                 <div class="image me-3" v-for="photo in this.photos_path">
