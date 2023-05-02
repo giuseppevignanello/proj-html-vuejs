@@ -17,9 +17,9 @@ export default {
     <div class="left_side ">
         <div class="card h-100">
             <div class="image">
-                <img src="../../public/img/photo-1444213007800-cff19e1677ac-400x300.jpg" class="card-img-top" alt="...">
+                <img src="/img/photo-1444213007800-cff19e1677ac-400x300.jpg" class="card-img-top" alt="...">
                 <div class="front text-white justify-content-center align-items-center"> 
-                    <h5>{{ this.title.toUpperCase() }}</h5>
+                    <h4>{{ this.title.toUpperCase() }}</h4>
                 </div>
             </div>
             <div class="card-body">

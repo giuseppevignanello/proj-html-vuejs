@@ -12,19 +12,19 @@ export default {
             title: "Recent Causes",
             photos: [
                 {
-                    photos_path: "../../public/img/avada-charity-fair-trade-featured-400x300.jpg",
+                    photos_path: "/img/avada-charity-fair-trade-featured-400x300.jpg",
                     text: "FAIR TRADE"
                 },
                 {
-                    photos_path:"../../public/img/avada-charity-shelter-featured-400x300.jpg",
+                    photos_path:"/img/avada-charity-shelter-featured-400x300.jpg",
                     text: "SHELTER"
                 },
                 {
-                    photos_path:"../../public/img/avada-charity-farming-featured-400x300.jpg",
+                    photos_path:"/img/avada-charity-farming-featured-400x300.jpg",
                     text: "FARMING"
                 },
                 {
-                    photos_path:"../../public/img/avada-charity-vaccines-featured-400x300.jpg",
+                    photos_path:"/img/avada-charity-vaccines-featured-400x300.jpg",
                     text: "VACCINES"
                 }
             ]
